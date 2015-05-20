@@ -9,8 +9,9 @@
 	
 	以KEY_xxx规范命名
   例子：
-  
-  	public static final String KEY_DOCTOR_ID = "dr_id";
+  ``` java
+  	public static final String KEY_DOCTOR_ID = "dr_id"
+  ```
   
 2.Android中资源id－－>固定为 
 
@@ -19,14 +20,9 @@
   例子：
 
 ``` java
- 	public void **loadBitmap**(int resId, ImageView imageView) {
+ 	public void loadBitmap(int resId, ImageView imageView) {
     	BitmapWorkerTask task = new BitmapWorkerTask(imageView);
     	task.execute(resId);
 }
 ```
 
-``` java
-// Load image, decode it to Bitmap and return Bitmap synchronously
-ImageSize targetSize = new ImageSize(80, 50); // result Bitmap will be fit to this size
-Bitmap bmp = imageLoader.loadImageSync(imageUri, targetSize, options);
-```
