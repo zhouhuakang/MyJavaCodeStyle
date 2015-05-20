@@ -17,8 +17,16 @@
 	int resId
 	
   例子：
- 
+
+``` java
  	public void **loadBitmap**(int resId, ImageView imageView) {
     	BitmapWorkerTask task = new BitmapWorkerTask(imageView);
     	task.execute(resId);
 }
+```
+
+``` java
+// Load image, decode it to Bitmap and return Bitmap synchronously
+ImageSize targetSize = new ImageSize(80, 50); // result Bitmap will be fit to this size
+Bitmap bmp = imageLoader.loadImageSync(imageUri, targetSize, options);
+```
