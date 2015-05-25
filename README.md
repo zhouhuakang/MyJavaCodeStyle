@@ -14,8 +14,9 @@
   ```
   
 2.Android中资源id－－>固定为 
-
+``` java
 	int resId
+``` 
 	
   例子：
 
@@ -25,4 +26,12 @@
     	task.execute(resId);
 }
 ```
+3.生成某种对象的 方法 的命名规则  格式：toXXX();
+  例子：
+``` java
+	Gson gson = new Gson();
+	gson.toJson(1);            ==> prints 1        通过整数1生成Json对象
+	gson.toJson("abcd");       ==> prints "abcd"   通过字符串“abcd”生产Json对象
+```
+  
 
