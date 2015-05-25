@@ -33,5 +33,10 @@
 	gson.toJson(1);            ==> prints 1        通过整数1生成Json对象
 	gson.toJson("abcd");       ==> prints "abcd"   通过字符串“abcd”生产Json对象
 ```
-  
+4.与3相对应，从某种固定对象 生成其他对象的 方法 的 命名规则 格式：fromXXX();
+  例子：
+``` java
+	int one = gson.fromJson("1", int.class);
+	Integer one = gson.fromJson("1", Integer.class);
+```
 
