@@ -39,4 +39,7 @@
 	int one = gson.fromJson("1", int.class);
 	Integer one = gson.fromJson("1", Integer.class);
 ```
-
+5.资源索引的命名规则
+``` java
+   颜色： 取前两位做名字的后缀   例如：颜色值  #d8d8d8  取名为 gray_d8   
+```
