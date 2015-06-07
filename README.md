@@ -43,3 +43,16 @@
 ``` java
    颜色： 取前两位做名字的后缀   例如：颜色值  #d8d8d8  取名为 gray_d8   
 ```
+＃方法命名
+1.方法的意思是“是否＋动词＋名词”,返回值为 true 或者  false 
+``` java
+	例子：pulltorefresh库中的“是否显示头部的载入布局”方法，动词为“显示”
+   		/**
+		 * @return true if this mode wants the Loading Layout Header to be shown
+		 */
+		public boolean showHeaderLoadingLayout() {
+			return this == PULL_FROM_START || this == BOTH;
+		}
+
+```
+
