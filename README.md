@@ -46,15 +46,10 @@
 ## 方法命名
 
 1.方法的意思是“是否＋动词＋名词”,返回值为 true 或者  false 
+ 方法名字格式一般为 “is+动词＋名词”,返回值类型为Boolean
 ``` java
-	例子：pulltorefresh库中的“是否显示头部的载入布局”方法，动词为“显示”
-   		/**
-		 * @return true if this mode wants the Loading Layout Header to be shown
-		 */
-		public boolean showHeaderLoadingLayout() {
-			return this == PULL_FROM_START || this == BOTH;
-		}
-
+	例子：pulltorefresh库中的“是否已经准备好下拉开始”方法，动词为“准备”
+   	protected abstract boolean isReadyForPullStart();
 ```
 
 ## 注释部分
